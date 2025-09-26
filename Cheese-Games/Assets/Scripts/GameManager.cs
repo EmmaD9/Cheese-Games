@@ -5,17 +5,19 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     // Example data
-    public string playerName;
-    public int playerScore;
-    public bool isLoggedIn;
-    public GameState currentGameState;
+    //public string playerName;
+    protected int playerScore;
+    //public bool isLoggedIn;
+    protected GameState currentGameState;   //may change access level later on
 
     public enum GameState
     {
         MainMenu,
-        Playing,
+        FarmScene,
+        MiniGame,
         Paused,
-        GameOver
+        Settings,
+        Credits
     }
 
     void Awake()
@@ -33,16 +35,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Player Name: " + GameManager.Instance.playerName);
+        //Debug.Log("Player Name: " + GameManager.Instance.playerName);
     }
 
     // Add methods to update and retrieve data
-    public void SetPlayerName(string name) => playerName = name;
+    //public void SetPlayerName(string name) => playerName = name;
     public void UpdateScore(int score) => playerScore = score;
     public void ChangeState(GameState newState) => currentGameState = newState;
 
 
-    //for future:
+    //for future (possibly save.load data):
     /*
     public void SaveGame()
     {
