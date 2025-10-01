@@ -7,7 +7,7 @@ public class MouseMovement : MonoBehaviour
 {
 
     private bool isHolding = false;
-    private float totalDistance = 0f;
+    public static float totalDistance = 0f;
 
     public void OnClick(InputAction.CallbackContext context)
     {
