@@ -1,0 +1,54 @@
+{
+    "name": "Cow Milking Controls",
+    "maps": [
+        {
+            "name": "Cow Milking",
+            "id": "c51fbb6f-8e28-4aca-a372-37dda0121c6e",
+            "actions": [
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "1cfffac1-adea-49f9-aef1-e86df6f25c42",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Delta",
+                    "type": "Value",
+                    "id": "08e111fb-6662-469b-ab1b-57a3f051b2fa",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "aea7c1da-612e-43b9-9ec9-6f7520a87a0b",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3c11d52c-2be2-4115-aab0-1dab4dc176fe",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Delta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
