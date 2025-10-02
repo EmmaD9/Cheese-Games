@@ -26,10 +26,13 @@ A brief description of what this project does and who it's for
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Example Color | ![#A06436](https://via.placeholder.com/10/0a192f?text=+) #A06436 |
+| Example Color | ![#F8BF45](https://via.placeholder.com/10/f8f8f8?text=+) #F8BF45 |
+| Example Color | ![#F2E8CF](https://via.placeholder.com/10/00b48a?text=+) #F2E8CF |
+| Example Color | ![#82E0FF](https://via.placeholder.com/10/00b48a?text=+) #82E0FF |
+| Example Color | ![#6A994E](https://via.placeholder.com/10/00b48a?text=+) #6A994E |
+| Example Color | ![#386641](https://via.placeholder.com/10/00b48a?text=+) #386641 |
+
 
 
 ## Installation
