@@ -26,12 +26,12 @@ A brief description of what this project does and who it's for
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#A06436](https://via.placeholder.com/10/0a192f?text=+) #A06436 |
-| Example Color | ![#F8BF45](https://via.placeholder.com/10/f8f8f8?text=+) #F8BF45 |
-| Example Color | ![#F2E8CF](https://via.placeholder.com/10/00b48a?text=+) #F2E8CF |
-| Example Color | ![#82E0FF](https://via.placeholder.com/10/00b48a?text=+) #82E0FF |
-| Example Color | ![#6A994E](https://via.placeholder.com/10/00b48a?text=+) #6A994E |
-| Example Color | ![#386641](https://via.placeholder.com/10/00b48a?text=+) #386641 |
+| Example Color | ![#A06436](https://via.placeholder.com/10/A06436?text=+) #A06436 |
+| Example Color | ![#F8BF45](https://via.placeholder.com/10/F8BF45?text=+) #F8BF45 |
+| Example Color | ![#F2E8CF](https://via.placeholder.com/10/F2E8CF?text=+) #F2E8CF |
+| Example Color | ![#82E0FF](https://via.placeholder.com/10/82E0FF?text=+) #82E0FF |
+| Example Color | ![#6A994E](https://via.placeholder.com/10/6A994E?text=+) #6A994E |
+| Example Color | ![#386641](https://via.placeholder.com/10/386641?text=+) #386641 |
 
 
 
