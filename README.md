@@ -24,12 +24,15 @@ A brief description of what this project does and who it's for
 [Research Doc](https://docs.google.com/document/d/1ntWZZa_rrsVtdg7Hs__UOPHaP57edaOvXA-ZYVXTUXo/edit?tab=t.0)
 ## Color Reference (tbd)
 
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
+| Color         | Hex Code & Swatch                                                  |
+|--------------|---------------------------------------------------------------------|
+| Example Color| ![#A06436](https://via.placeholder.com/15/A06436/000000?text=+) `#A06436` |
+| Example Color| ![#F8BF45](https://via.placeholder.com/15/F8BF45/000000?text=+) `#F8BF45` |
+| Example Color| ![#F2E8CF](https://via.placeholder.com/15/F2E8CF/000000?text=+) `#F2E8CF` |
+| Example Color| ![#82E0FF](https://via.placeholder.com/15/82E0FF/000000?text=+) `#82E0FF` |
+| Example Color| ![#6A994E](https://via.placeholder.com/15/6A994E/000000?text=+) `#6A994E` |
+| Example Color| ![#386641](https://via.placeholder.com/15/386641/000000?text=+) `#386641` |
+
 
 
 ## Installation
