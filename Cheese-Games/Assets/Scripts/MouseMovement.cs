@@ -10,6 +10,11 @@ public class MouseMovement : MonoBehaviour
     private bool isHolding = false;
     public static float totalDistance = 0f;
 
+    private void Start()
+    {
+        totalDistance = 0f;
+    }
+
     public void OnClick(InputAction.CallbackContext context)
     {
         if (context.started)
