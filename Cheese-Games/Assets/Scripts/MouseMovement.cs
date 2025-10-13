@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class MouseMovement : MonoBehaviour
 {
     [SerializeField] Rect bounds = new Rect(100, 100, 400, 400);
+    [SerializeField] int moveDirection = 0;
 
     private bool isHolding = false;
     public static float totalDistance = 0f;
@@ -27,13 +28,21 @@ public class MouseMovement : MonoBehaviour
     {
         if (!isHolding) return;
 
-        Vector2 mousePos = Mouse.current.position.ReadValue();
         Vector3 mousePosWorld = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
 
         if (bounds.Contains(mousePosWorld))
         {
             Vector2 delta = context.ReadValue<Vector2>();
-            totalDistance += Mathf.Abs(delta.y);
+
+            if (moveDirection == 0)
+            {
+                totalDistance += Mathf.Abs(delta.y);
+            }
+            else if (moveDirection == 1)
+            {
+                totalDistance += Mathf.Abs(delta.x);
+            }
+            
         }
         
     }
