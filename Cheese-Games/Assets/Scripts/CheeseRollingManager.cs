@@ -29,36 +29,43 @@ public class CheeseRollingManager : MonoBehaviour
     {
         Debug.Log("left");
 
-        currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce * -1.0f, 0));
-
-        if (isCheeseWhite)
+        if (currentWheel.transform.position.y < -2.5f)
         {
-            score++;
-        }
-        else
-        {
-            //fail stuff
-        }
+            currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce * -1.0f, 0));
 
-        cheeseInPlay = false;
+            if (isCheeseWhite)
+            {
+                score++;
+            }
+            else
+            {
+                //fail stuff
+            }
+
+            cheeseInPlay = false;
+        }
     }
 
     public void rightFlick()
     {
         Debug.Log("right");
 
-        currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce, 0));
-
-        if (!isCheeseWhite)
+        if (currentWheel.transform.position.y < -2.5f)
         {
-            score++;
-        }
-        else
-        {
-            //fail stuff
+            currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce, 0));
+
+            if (!isCheeseWhite)
+            {
+                score++;
+            }
+            else
+            {
+                //fail stuff
+            }
+
+            cheeseInPlay = false;
         }
 
-        cheeseInPlay = false;
     }
 
     private void spawnCheese()
@@ -68,6 +75,7 @@ public class CheeseRollingManager : MonoBehaviour
         if (result >= 0.5)
         {
             currentWheel = Instantiate(whiteWheel, new Vector3(0, 10, 0), Quaternion.identity);
+            isCheeseWhite = true;
         }
         else
         {
@@ -91,7 +99,7 @@ public class CheeseRollingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!cheeseInPlay)
+        if (!cheeseInPlay && !win.gameWon && !lose.gameLost)
         {
             spawnCheese();
         }
