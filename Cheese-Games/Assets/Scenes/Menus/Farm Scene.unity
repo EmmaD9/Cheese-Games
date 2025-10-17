@@ -606,9 +606,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 308daf2e466b07e49a8c4c69ad07d8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneA: 
-  sceneB: 
-  sceneC: 
+  sceneA: Cow Milking
+  sceneB: Credits
+  sceneC: Farm Scene
 --- !u!4 &787200629
 Transform:
   m_ObjectHideFlags: 0
