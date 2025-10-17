@@ -19,7 +19,8 @@ public class WinScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        changeScene = GetComponent<ChangeScenes>();
+        gameWon = false;
     }
 
     // Update is called once per frame

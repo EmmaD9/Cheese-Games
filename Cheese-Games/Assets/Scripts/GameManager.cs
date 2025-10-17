@@ -2,13 +2,16 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager Instance { get; private set; }
+
 
     // Example data
     //public string playerName;
     protected int playerScore;
     //public bool isLoggedIn;
     protected GameState currentGameState;   //may change access level later on
+
+    protected string playerName;   //may change access level later on
 
     public enum GameState
     {
@@ -42,7 +45,11 @@ public class GameManager : MonoBehaviour
     //public void SetPlayerName(string name) => playerName = name;
     public void UpdateScore(int score) => playerScore = score;
     public void ChangeState(GameState newState) => currentGameState = newState;
-
+    public void SetPlayerName(string name)
+    {
+        playerName = name;
+        Debug.Log("Player name set to: " + playerName);
+    }
 
     //for future (possibly save.load data):
     /*

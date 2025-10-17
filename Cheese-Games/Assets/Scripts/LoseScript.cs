@@ -20,7 +20,8 @@ public class LoseScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        changeScene = GetComponent<ChangeScenes>();
+        gameLost = false;
     }
 
     // Update is called once per frame
