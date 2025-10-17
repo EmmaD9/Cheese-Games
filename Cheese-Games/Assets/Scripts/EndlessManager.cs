@@ -9,7 +9,7 @@ public class EndlessManager : MonoBehaviour
 {
     [SerializeField] private string sceneA;
     [SerializeField] private string sceneB;
-    [SerializeField] private string sceneC;
+    //[SerializeField] private string sceneC;
 
     //Add in later:
     //[SerializeField] private string sceneD;
@@ -21,7 +21,7 @@ public class EndlessManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        possibleScenes = new List<string> { sceneA, sceneB, sceneC }
+        possibleScenes = new List<string> { sceneA, sceneB }
             .Where(scene => !string.IsNullOrEmpty(scene))
             .ToList();
     }
