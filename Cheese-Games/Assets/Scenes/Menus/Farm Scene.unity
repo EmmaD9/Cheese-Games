@@ -898,6 +898,8 @@ GameObject:
   - component: {fileID: 1109748650}
   - component: {fileID: 1109748649}
   - component: {fileID: 1109748648}
+  - component: {fileID: 1109748652}
+  - component: {fileID: 1109748651}
   m_Layer: 5
   m_Name: Minigame 2
   m_TagString: Untagged
@@ -968,7 +970,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1109748649}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1109748651}
+        m_TargetAssemblyTypeName: ResetMinigame, Assembly-CSharp
+        m_MethodName: reLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1109748652}
+        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
+        m_MethodName: NextScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1109748649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1007,6 +1033,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1109748646}
   m_CullTransparentMesh: 1
+--- !u!114 &1109748651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109748646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281a39d580807dd478576871d0153f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Cheese Wheel Rolling
+--- !u!114 &1109748652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1109748646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b67c5d8a0a4584a8dd23f841423c93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSceneName: Cheese Wheel Rolling
 --- !u!1 &1319614669
 GameObject:
   m_ObjectHideFlags: 0
