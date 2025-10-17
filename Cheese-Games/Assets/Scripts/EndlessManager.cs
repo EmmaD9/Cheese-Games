@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -20,25 +21,26 @@ public class EndlessManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        possibleScenes = new List<string>() {sceneA, sceneB, sceneC };
+        possibleScenes = new List<string> { sceneA, sceneB, sceneC }
+            .Where(scene => !string.IsNullOrEmpty(scene))
+            .ToList();
     }
-
     public void NextScene()
     {
-        int randomNumberInt = Random.Range(0, possibleScenes.Count);
-
-        string randomScene = possibleScenes[randomNumberInt];
-
-        if (randomScene != null && randomScene != SceneManager.GetActiveScene().name)
+        int maxAttempts = 10;
+        for (int i = 0; i < maxAttempts; i++)
         {
-            Debug.Log("we should go to the next scene now!!!");
-            SceneManager.LoadScene(randomScene);
-        } else
-        {
-            Debug.Log("the scene is either null or it is the current scene");
-            NextScene();
+            int randomNumberInt = Random.Range(0, possibleScenes.Count);
+            string randomScene = possibleScenes[randomNumberInt];
+
+            if (!string.IsNullOrEmpty(randomScene) && randomScene != SceneManager.GetActiveScene().name)
+            {
+                Debug.Log("we should go to the next scene now!!!");
+                SceneManager.LoadScene(randomScene);
+                return;
+            }
         }
-        
 
+        Debug.LogWarning("Failed to find a valid next scene after multiple attempts.");
     }
 }
