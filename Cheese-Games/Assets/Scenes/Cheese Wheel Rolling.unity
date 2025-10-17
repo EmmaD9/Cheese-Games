@@ -597,7 +597,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623138504}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -966,7 +966,7 @@ MonoBehaviour:
   lose: {fileID: 0}
   time: {fileID: 0}
   score: 0
-  scoreToWin: 3
+  scoreToWin: 8
 --- !u!1 &1827774816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1179,8 +1179,8 @@ Transform:
   m_GameObject: {fileID: 1867389552}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2031, y: 0.5404, z: 0}
-  m_LocalScale: {x: 1.4700886, y: 1.2199777, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.93, y: 0.93, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}

@@ -22,8 +22,8 @@ public class CheeseRollingManager : MonoBehaviour
     public uint score = 0;
     public uint scoreToWin;
 
-    //Left is White
-    //Yellow is Right
+    //Left is yellow
+    //Right is white
 
     public void leftFlick()
     {
@@ -33,7 +33,7 @@ public class CheeseRollingManager : MonoBehaviour
         {
             currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce * -1.0f, 0));
 
-            if (isCheeseWhite)
+            if (!isCheeseWhite)
             {
                 score++;
             }
@@ -54,7 +54,7 @@ public class CheeseRollingManager : MonoBehaviour
         {
             currentWheel.GetComponent<Rigidbody2D>().AddForce(new Vector2(flickForce, 0));
 
-            if (!isCheeseWhite)
+            if (isCheeseWhite)
             {
                 score++;
             }
