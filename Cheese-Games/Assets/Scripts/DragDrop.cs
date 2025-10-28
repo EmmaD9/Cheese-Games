@@ -6,9 +6,11 @@ using UnityEngine.InputSystem;
 public class DragDrop : MonoBehaviour
 {
     private Vector2 mousePos;
-    private bool isHolding = false;
+    private bool isHolding;
     private Transform heldObject;
     private Vector3 offset;
+
+    [SerializeField] private Dropzone dropzone;
 
     public void OnPoint(InputAction.CallbackContext context)
     {
@@ -34,12 +36,29 @@ public class DragDrop : MonoBehaviour
                     heldObject = dragObject.transform;
                     offset = heldObject.position - worldPos;
                     isHolding = true;
+                    heldObject.GetComponent<Conveyor>().Hold(true);
                     break;
                 }
             }
         }
         else if (context.canceled)
         {
+            if (isHolding && heldObject != null)
+            {
+                Conveyor conveyorObj = heldObject.GetComponent<Conveyor>();
+                conveyorObj.Hold(false);
+
+                // Check when released in dropzone
+                if (dropzone.IsContained(heldObject.position))
+                {
+                    dropzone.CheckObjects(conveyorObj);
+                }
+                else
+                {
+                    conveyorObj.Drop();
+                }
+            }
+            
             isHolding = false;
             heldObject = null;
         }
