@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Dropzone : MonoBehaviour
 {
+    [SerializeField] WinScript win;
+    [SerializeField] LoseScript lose;
+    [SerializeField] Timer time;
+
     private Bounds bounds;
     private int points = 0;
+    private Timer timer;
 
     void Awake()
     {
@@ -35,9 +40,14 @@ public class Dropzone : MonoBehaviour
 
     void Update()
     {
-        if (points >= 5)
+        if (points >= 5 && !lose.gameLost)
         {
-            Debug.Log("YOU WIN");
+            win.Win();
+        }
+
+        if (time.outOfTime() && !win.gameWon)
+        {
+            lose.Lose();
         }
     }
 }
