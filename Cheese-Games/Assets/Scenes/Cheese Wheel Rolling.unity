@@ -966,7 +966,7 @@ MonoBehaviour:
   lose: {fileID: 0}
   time: {fileID: 0}
   score: 0
-  scoreToWin: 8
+  scoreToWin: 4
 --- !u!1 &1827774816
 GameObject:
   m_ObjectHideFlags: 0
