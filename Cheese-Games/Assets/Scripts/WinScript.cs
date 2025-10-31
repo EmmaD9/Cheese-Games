@@ -9,17 +9,23 @@ public class WinScript : MonoBehaviour
     public bool gameWon;
 
     [SerializeField] ChangeScenes changeScene;
+    [SerializeField] Money money;
 
     public void Win()
     {
-        gameWon = true;
-        winText.SetActive(true);
+        if (!gameWon)
+        {
+            gameWon = true;
+            money.EarnMoney();
+            winText.SetActive(true);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
         changeScene = GetComponent<ChangeScenes>();
+        money = GameObject.Find("Game Manager").GetComponent<Money>();
         gameWon = false;
     }
 
