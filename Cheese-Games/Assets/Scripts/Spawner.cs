@@ -47,7 +47,7 @@ public class Spawner : MonoBehaviour
 
         // Spawn on left of screen
         Vector3 leftEdge = mainCam.ScreenToWorldPoint(new Vector3(0, 0, 0));
-        Vector3 spawnPos = new Vector3(leftEdge.x - 1f, spawnYPos, 0);
+        Vector3 spawnPos = new Vector3(-5, spawnYPos, 0);
 
         Instantiate(prefabToSpawn, spawnPos, Quaternion.identity);
     }
