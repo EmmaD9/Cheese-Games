@@ -10,6 +10,11 @@ public class NotificationSystem : MonoBehaviour
     [SerializeField] private float displayDuration = 3f;
     [SerializeField] private TextMeshProUGUI messageText;
 
+    //sets diff kinds of notifs
+    [SerializeField] private bool cycle;
+    [SerializeField] private bool conditional;
+    [SerializeField] private bool instructions;
+
 
     private Canvas canvas;
     private int currentIndex = 0;
@@ -33,9 +38,21 @@ public class NotificationSystem : MonoBehaviour
             }
         }
 
-        if (feedbackMessages.Count > 0)
+        if (feedbackMessages.Count > 0 && cycle == true)
         {
             StartCoroutine(CycleMessages());
+        }
+
+        if(conditional == true)
+        {
+            //TODO: working on this one rn
+        }
+
+        //Calls a new instruction to the screen each time u go back to the farm scene
+        if (instructions == true)
+        {
+            string randomMessage = feedbackMessages[Random.Range(0, feedbackMessages.Count)];
+            messageText.text = randomMessage;
         }
     }
 
