@@ -1450,11 +1450,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.data[0]
-      value: hello
+      value: Roll Yellow Cheese <-
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.data[1]
-      value: goodbye
+      value: Roll White Cheese ->
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
