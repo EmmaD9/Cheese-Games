@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 609836276}
   - component: {fileID: 609836275}
   - component: {fileID: 609836274}
+  - component: {fileID: 609836278}
   m_Layer: 0
   m_Name: ScriptManager
   m_TagString: Untagged
@@ -295,6 +296,7 @@ MonoBehaviour:
   timeDisplayed: 2
   gameWon: 0
   changeScene: {fileID: 609836274}
+  money: {fileID: 609836278}
 --- !u!114 &609836277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +313,21 @@ MonoBehaviour:
   timeDisplayed: 2
   gameLost: 0
   changeScene: {fileID: 609836274}
+--- !u!114 &609836278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609836269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96912a5051a47054b89a192daa34b1e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  money: 0
+  minMoney: 0
+  maxMoney: 0
 --- !u!1 &920240238
 GameObject:
   m_ObjectHideFlags: 0
