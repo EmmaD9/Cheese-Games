@@ -1416,8 +1416,6 @@ GameObject:
   - component: {fileID: 1389242356}
   - component: {fileID: 1389242355}
   - component: {fileID: 1389242354}
-  - component: {fileID: 1389242358}
-  - component: {fileID: 1389242357}
   m_Layer: 5
   m_Name: Minigame 3
   m_TagString: Untagged
@@ -1488,31 +1486,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1389242355}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1389242357}
-        m_TargetAssemblyTypeName: ResetMinigame, Assembly-CSharp
-        m_MethodName: reLoad
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1389242358}
-        m_TargetAssemblyTypeName: ChangeScenes, Assembly-CSharp
-        m_MethodName: NextScene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1389242355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,32 +1525,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1389242352}
   m_CullTransparentMesh: 1
---- !u!114 &1389242357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389242352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 281a39d580807dd478576871d0153f33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Drag and Drop
---- !u!114 &1389242358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1389242352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3b67c5d8a0a4584a8dd23f841423c93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetSceneName: Drag and Drop
 --- !u!1 &1416770839
 GameObject:
   m_ObjectHideFlags: 0
