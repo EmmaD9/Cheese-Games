@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialTime: 4.5
-  tutorialBackground: {fileID: 5934130528147028770, guid: bf2018943adf9d9499f9d210224c0dc7, type: 3}
+  tutorialBackgroundPrefab: {fileID: 5934130528147028770, guid: bf2018943adf9d9499f9d210224c0dc7, type: 3}
   tutorialMouse: {fileID: 457271935}
   anim: {fileID: 0}
 --- !u!1 &983758608
