@@ -65,7 +65,7 @@ public class Money : MonoBehaviour
                 TextMeshProUGUI foundText = obj.GetComponent<TextMeshProUGUI>();
                 if (foundText != null)
                 {
-                    Debug.Log($"Found object '{targetObjectName}' in scene '{targetSceneName}'.");
+                    //Debug.Log($"Found object '{targetObjectName}' in scene '{targetSceneName}'.");
                     foundText.text = money.ToString();
                 }
                 else
