@@ -5,9 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: e21a0955915daf04285fcb0b47354362
@@ -24,12 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Cow Milking.unity
     guid: 03de71a37f7597943b3a2443331e95cc
   - enabled: 1
-    path: Assets/Scenes/Menus/(Ignore) User Info.unity
-    guid: 9bafc32287f5e0345b1608ed42555387
-  - enabled: 1
     path: Assets/Scenes/Cheese Wheel Rolling.unity
     guid: 76f2c88f40dc3054483bd9aa3347bf97
   - enabled: 1
     path: Assets/Scenes/Drag and Drop.unity
     guid: 9df0313998bb7ed47bdff8e10bbd2726
+  - enabled: 1
+    path: Assets/Scenes/Charcuterie.unity
+    guid: 21cb51e2b90af9c49acffa5d7ba37421
   m_configObjects: {}
