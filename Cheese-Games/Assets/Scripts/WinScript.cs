@@ -16,7 +16,7 @@ public class WinScript : MonoBehaviour
         if (!gameWon)
         {
             gameWon = true;
-            money.EarnMoney();
+            //money.EarnMoney();
             winText.SetActive(true);
         }
     }
@@ -25,7 +25,7 @@ public class WinScript : MonoBehaviour
     void Start()
     {
         changeScene = GetComponent<ChangeScenes>();
-        money = GameObject.Find("Game Manager").GetComponent<Money>();
+        //money = GameObject.Find("Game Manager").GetComponent<Money>();
         gameWon = false;
     }
 
