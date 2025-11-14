@@ -9,16 +9,16 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Menus/Main Menu.unity
+    path: Assets/Scenes/Main Menu.unity
     guid: e21a0955915daf04285fcb0b47354362
   - enabled: 1
-    path: Assets/Scenes/Menus/Farm Scene.unity
+    path: Assets/Scenes/Farm Scene.unity
     guid: e6885e07b34bc1d4c91f616b79f35dfa
   - enabled: 1
-    path: Assets/Scenes/Menus/Settings.unity
+    path: Assets/Scenes/Settings.unity
     guid: 5f146f949cc8c134c81d12977782be53
   - enabled: 1
-    path: Assets/Scenes/Menus/Credits.unity
+    path: Assets/Scenes/Credits.unity
     guid: cdb268ac9302f8441a6529745fa47c90
   - enabled: 1
     path: Assets/Scenes/Cow Milking.unity
