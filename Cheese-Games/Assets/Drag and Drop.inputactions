@@ -1,0 +1,54 @@
+{
+    "name": "Drag and Drop",
+    "maps": [
+        {
+            "name": "Drag and Drop",
+            "id": "b20b407b-8457-4c30-95a4-8871d8961015",
+            "actions": [
+                {
+                    "name": "Point",
+                    "type": "Value",
+                    "id": "2c0e7920-5c77-4058-9acd-d28950631584",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Click",
+                    "type": "Button",
+                    "id": "507b41e9-da0f-474a-bd13-b7665b2a279d",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "09be8553-98df-45a5-bdec-b47250c3fcc9",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Point",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76ec2472-3a28-4648-b84f-80021ce3d3b8",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
