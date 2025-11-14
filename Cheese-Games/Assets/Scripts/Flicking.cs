@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class Flicking : MonoBehaviour
 {
     private bool isHolding = false;
-    //private bool flickCancelled = false;  //commented this out for now so there is no compiler warnings the build will riot otherwise
+    private bool flickCancelled = false;
 
     Vector2 startPos;
     Vector2 endPos;
