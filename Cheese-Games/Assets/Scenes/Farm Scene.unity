@@ -149,14 +149,15 @@ RectTransform:
   m_GameObject: {fileID: 116052225}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2526406, y: 1.2828, z: 1.2828}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2136235093}
   m_Father: {fileID: 646277898}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -42.567375, y: -161.64001}
+  m_AnchoredPosition: {x: -72.6, y: -161.64001}
   m_SizeDelta: {x: -471.1346, y: -385.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &116052227
@@ -602,7 +603,6 @@ RectTransform:
   - {fileID: 853094399}
   - {fileID: 1693259124}
   - {fileID: 116052226}
-  - {fileID: 2136235093}
   - {fileID: 1131445691}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3192,16 +3192,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136235092}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7983135, y: 0.7795448, z: 0.7795448}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 646277898}
+  m_Father: {fileID: 116052226}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -88.023, y: -161.64}
+  m_AnchoredPosition: {x: -12.312386, y: 0.000045776367}
   m_SizeDelta: {x: 237.95, y: 64.917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2136235094
@@ -3251,12 +3251,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 46.1
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 405.21
   m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
