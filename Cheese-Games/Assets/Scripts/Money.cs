@@ -80,7 +80,7 @@ public class Money : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Current scene is '{currentScene}', not '{targetSceneName}'.");
+            //Debug.Log($"Current scene is '{currentScene}', not '{targetSceneName}'.");
         }
     }
 
