@@ -4,9 +4,18 @@ using UnityEngine;
 
 public class PersistentObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public static PersistentObject Instance { get; private set; }
+
+    private void Awake()
     {
-        DontDestroyOnLoad(this);   
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
