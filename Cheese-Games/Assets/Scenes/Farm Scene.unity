@@ -2378,19 +2378,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.data[0]
-      value: Milk the Cows!
+      value: Milk the cows!
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.data[1]
-      value: Roll the Cheese!
+      value: Roll the cheese!
       objectReference: {fileID: 0}
     - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
       propertyPath: feedbackMessages.Array.data[2]
-      value: ...do another minigame
+      value: Check the conveyor belt!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
+      propertyPath: feedbackMessages.Array.data[3]
+      value: Make a charcuterie board!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
+      propertyPath: feedbackMessages.Array.data[4]
+      value: Game 5 (tbd)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536168978734073552, guid: 5ca79a305faa7284b8362a8aa5855522, type: 3}
+      propertyPath: feedbackMessages.Array.data[5]
+      value: Game 6 (tbd)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
