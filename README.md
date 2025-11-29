@@ -1,8 +1,9 @@
 
 # Cheese Games: Cheese Clicker
 
-A brief description of what this project does and who it's for
+Play fun casual minigames to run the best cheese farm!
 
+[![Cheese Clicker](https://img.itch.zone/aW1hZ2UvMzk2NTUzMi8yMzM2MzYyLnBuZw==/original/552x167.png)](https://emmad9.itch.io/cheese-clicker)
 
 ## Authors
 
