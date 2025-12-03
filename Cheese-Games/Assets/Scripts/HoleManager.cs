@@ -5,6 +5,7 @@ using UnityEngine;
 public class HoleManager : MonoBehaviour
 {
     [SerializeField] WinScript win;
+    [SerializeField] LoseScript lose;
 
     public Hole holePrefab;
     public int totalHoles = 10;
@@ -17,7 +18,7 @@ public class HoleManager : MonoBehaviour
 
     private void Update()
     {
-        if (currentCount < totalHoles)
+        if (currentCount >= totalHoles)
         {
             win.Win();
         }
@@ -31,6 +32,7 @@ public class HoleManager : MonoBehaviour
         Hole ht = Instantiate(holePrefab, randomPos, Quaternion.identity);
 
         ht.OnHoleResolved += HandleHoleResult;
+        ht.OnHoleMissed += HandleHoleMiss;
         ht.Activate();
     }
 
@@ -40,5 +42,10 @@ public class HoleManager : MonoBehaviour
         currentCount++;
         if (currentCount < totalHoles)
             SpawnNextHole();
+    }
+
+    void HandleHoleMiss(Hole target)
+    {
+        lose.Lose();
     }
 }

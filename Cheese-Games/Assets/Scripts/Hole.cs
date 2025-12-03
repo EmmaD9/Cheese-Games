@@ -14,6 +14,7 @@ public class Hole : MonoBehaviour
     private bool active = false;
 
     public System.Action<Hole> OnHoleResolved;
+    public System.Action<Hole> OnHoleMissed;
 
     public void Activate()
     {
@@ -34,6 +35,7 @@ public class Hole : MonoBehaviour
         if (t >= 1.0f)
         {
             active = false;
+            OnHoleMissed?.Invoke(this);
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -44,6 +46,11 @@ public class Hole : MonoBehaviour
                 active = false;
                 PunchHole();
                 OnHoleResolved?.Invoke(this);
+            }
+            else
+            {
+                active = false;
+                OnHoleMissed?.Invoke(this);
             }
         }
     }

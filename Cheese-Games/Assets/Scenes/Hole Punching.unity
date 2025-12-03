@@ -257,7 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b843a0ee1e77eb74598e6aaf7b9e20c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
+  win: {fileID: 661273188}
+  lose: {fileID: 661273190}
   holePrefab: {fileID: 3146643271353589757, guid: cafc3bf0baa0cb743ba7d405ed944283, type: 3}
   totalHoles: 10
 --- !u!4 &661273187
