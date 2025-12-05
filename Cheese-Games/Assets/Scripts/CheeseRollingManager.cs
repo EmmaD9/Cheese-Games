@@ -9,6 +9,11 @@ public class CheeseRollingManager : MonoBehaviour
     public GameObject yellowWheel;
     public float flickForce;
 
+    //Audio Stuff:
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip correctSfx;
+    [SerializeField] private AudioClip incorrectSfx;
+
     private System.Random rand;
 
     private GameObject currentWheel;
@@ -36,10 +41,13 @@ public class CheeseRollingManager : MonoBehaviour
             if (!isCheeseWhite)
             {
                 score++;
+                audioSource.PlayOneShot(correctSfx);
             }
             else
             {
                 //fail stuff
+                audioSource.PlayOneShot(incorrectSfx);
+
             }
 
             cheeseInPlay = false;
@@ -57,10 +65,14 @@ public class CheeseRollingManager : MonoBehaviour
             if (isCheeseWhite)
             {
                 score++;
+                audioSource.PlayOneShot(correctSfx);
+
             }
             else
             {
                 //fail stuff
+                audioSource.PlayOneShot(incorrectSfx);
+
             }
 
             cheeseInPlay = false;
