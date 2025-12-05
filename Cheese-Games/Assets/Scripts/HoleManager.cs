@@ -11,6 +11,12 @@ public class HoleManager : MonoBehaviour
     public int totalHoles = 10;
     private int currentCount = 0;
 
+    //Audio
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip correctSfx;
+    [SerializeField] private AudioClip badSfx;
+
+
     void Start()
     {
         SpawnNextHole();
@@ -38,6 +44,13 @@ public class HoleManager : MonoBehaviour
 
     void HandleHoleResult(Hole target)
     {
+        // Play sound when points increase
+        if (correctSfx != null && audioSource != null)
+        {
+            Debug.Log("there should be sound");
+            audioSource.PlayOneShot(correctSfx);
+        }
+
         Destroy(target.gameObject);
         currentCount++;
         if (currentCount < totalHoles)
@@ -46,6 +59,13 @@ public class HoleManager : MonoBehaviour
 
     void HandleHoleMiss(Hole target)
     {
+        // Play sound when points increase
+        if (badSfx != null && audioSource != null)
+        {
+            Debug.Log("there should be sound");
+            audioSource.PlayOneShot(badSfx);
+        }
+
         lose.Lose();
     }
 }
