@@ -13,6 +13,10 @@ public class Charcuterie : MonoBehaviour
     private List<GameObject> boardObjects = new List<GameObject>();
     [SerializeField] private int winCount;
 
+    //Audio
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip correctSfx;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +38,12 @@ public class Charcuterie : MonoBehaviour
 
             if (bounds.Contains(center))
             {
+                if (correctSfx != null && audioSource != null && !audioSource.isPlaying)
+                {
+                    audioSource.clip = correctSfx;
+                    audioSource.Play();
+                }
+
                 objectsOnBoard++;
             }
         }
@@ -41,6 +51,7 @@ public class Charcuterie : MonoBehaviour
         if (objectsOnBoard >= winCount && !lose.gameLost)
         {
             win.Win();
+
         }
 
         // LOSE CONDITION
