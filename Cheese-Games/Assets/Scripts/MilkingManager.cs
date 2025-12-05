@@ -25,15 +25,18 @@ public class MilkingManager : MonoBehaviour
     {
         distance = MouseMovement.totalDistance / 100;
 
-        if (time.outOfTime() && !win.gameWon)
-        {
-            lose.Lose();
-        }
-
-        if (distance >= winThreshold && !lose.gameLost)
+        // Win condition first
+        if (distance >= winThreshold && !lose.gameLost && !win.gameWon)
         {
             win.Win();
             Debug.Log("YOU WIN");
+            return; // stop here so lose doesn't trigger
+        }
+
+        // Lose condition only if not already won
+        if (time.outOfTime() && !win.gameWon && !lose.gameLost)
+        {
+            lose.Lose();
         }
     }
 }
