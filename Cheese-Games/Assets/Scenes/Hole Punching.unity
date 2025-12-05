@@ -464,7 +464,7 @@ MonoBehaviour:
   lose: {fileID: 661273190}
   holePrefab: {fileID: 3146643271353589757, guid: cafc3bf0baa0cb743ba7d405ed944283, type: 3}
   totalHoles: 10
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 661273191}
   correctSfx: {fileID: 8300000, guid: f426e27385f532d449fd1c42127c44b2, type: 3}
   badSfx: {fileID: 8300000, guid: 42866ec57e62d534faf38eec9cde6044, type: 3}
 --- !u!4 &661273187
