@@ -396,8 +396,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -142.78}
-  m_SizeDelta: {x: 1064.156, y: 425.4708}
+  m_AnchoredPosition: {x: 8.7912, y: -34.3525}
+  m_SizeDelta: {x: 1835.8469, y: 724.3788}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745706345
 MonoBehaviour:
@@ -419,7 +419,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: placeholder stuff that is very neat
+  m_text: "Devs: \n\t-Richard Bernatz\n\t-Chase Collins\n\t-Emma Duprey\nArtist:
+    \n\t-Taylor Frazier\nAudio:\n\t-Main Theme: Dark Fantasy Studio's Angry Bull\n\t-Sfx:
+    Joel Stuedler Modern day SFX\n\t-Sfx: Pixabay freesound_community"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dfb84bffc0c20714a8e0191abe6e29cb, type: 2}
   m_sharedMaterial: {fileID: 3700340002077465915, guid: dfb84bffc0c20714a8e0191abe6e29cb, type: 2}
@@ -446,7 +448,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 141.2
+  m_fontSize: 65.85
   m_fontSizeBase: 140.45
   m_fontWeight: 400
   m_enableAutoSizing: 1
