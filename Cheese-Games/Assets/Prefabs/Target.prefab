@@ -214,9 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f733abd67dfe7478ffecbd4d943115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lose: {fileID: 0}
   shrinkDuration: 1
-  hitTolerance: 0.1
+  hitTolerance: 0.3
   ring: {fileID: 4261668960910807470}
   circle: {fileID: 7488951203872066117}
   holePrefab: {fileID: 9031736079623835178, guid: 2bed0d7400c107144b13e936772fdb23, type: 3}

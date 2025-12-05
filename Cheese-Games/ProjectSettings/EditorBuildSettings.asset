@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Charcuterie.unity
     guid: 21cb51e2b90af9c49acffa5d7ba37421
+  - enabled: 1
+    path: Assets/Scenes/Hole Punching.unity
+    guid: 5e7ccf7c384af19448705fb34479cb08
   m_configObjects: {}
